@@ -10,12 +10,9 @@
     <p id="distance">done</p>
     <script>
        function mitPoint(x1, y1, x2, y2){
-          return((x1+x2) / 2 +","+(y1+y2) / 2 );   
+          return((float)(x1+x2) / 2 . " , ". (float)(y1+y2) / 2);   
        }
-
-       let x1= 2; y1= 3;
-       let x2= 3; y2= 4;
-       console.log(mitPoint(x1, y1, x2, y2));
+       console.log(mitPoint(2, 3, 4, 3));
     </script>
 </body>
 </html>
