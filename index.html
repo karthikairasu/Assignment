@@ -28,6 +28,11 @@
          return(((x1*y2) + (x2*y3) + (x3*y1) - (x1*y3) - (x2*y1) - (x3*y2) )/ 2);
        }
        console.log(Math.abs(areaOfTriangle(2, 1, 8, 9, 1, 8)));
+       //============4 points its area==============// (1/2) x { (x₁y₂+x₂y₃+x₃y₄+x₄y₁) - (x₂y₁+x₃y₂+x₄y₃+x₁y₄) }
+       function areaOfQuadrilateral(x1, y1, x2, y2, x3, y3, x4, y4){
+          return( (1/2) * (((x1*y2) + (x2*y3)  + (x3*y4) + (x4*y1)) - ((x2*y1) + (x3*y2) + (x4*y3) + (x1*y4))) )
+       }
+       console.log(Math.abs(areaOfQuadrilateral(-4, -2, -3, -5, 3, -2, 2, 3)));
     </script>
 </body>
 </html>
